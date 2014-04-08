@@ -4,7 +4,7 @@ module.exports = function() {
     var cmd = context.require('./utils/cmd'),
         Q = context.require('q');
 
-    this.task('xxx', function(logger) {
+    this.task('init', function(logger) {
         logger.log('Updating composer...'.yellow);
         return cmd('composer', ['update']).then(function(stream) {
             console.log(stream[0]);
