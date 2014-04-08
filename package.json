@@ -1,0 +1,16 @@
+{
+  "name": "bono-arch",
+  "version": "0.0.0",
+  "description": "",
+  "main": "paxfile.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "shelljs": "^0.2.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
