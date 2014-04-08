@@ -1,11 +1,12 @@
 module.exports = function() {
     var context = this;
 
-    var cmd = context.require('./utils/cmd');
+    var cmd = context.require('./utils/cmd'),
+        Q = context.require('q');
 
-    this.task('init', function(logger) {
+    this.task('xxx', function(logger) {
         logger.log('Updating composer...'.yellow);
-        cmd('composer', ['update']).then(function(stream) {
+        return cmd('composer', ['update']).then(function(stream) {
             console.log(stream[0]);
         });
     });
