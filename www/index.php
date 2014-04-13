@@ -46,7 +46,7 @@ $app = new \Bono\App(
 $app->get(
     '/',
     function () use ($app) {
-        echo 'Hello world!';
+        $app->response->template('home');
     }
 );
 
