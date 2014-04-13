@@ -21,15 +21,18 @@ return array(
             'datasources' => array(
                 'mongo' => array(
                     'driver' => '\\Norm\\Connection\\MongoConnection',
-                    'database' => 'application',
+                    'database' => 'bono',
                 ),
             ),
             'collections' => array(
                 'mapping' => array(
                     'User' => array(
                         'schema' => array(
-                            'username' => String::create('username'),
-                            'password' => Password::create('password'),
+                            'username' => String::create('username')->filter('trim|required|unique:User,username'),
+                            'password' => Password::create('password')->filter('trim|confirmed|salt'),
+                            'email' => String::create('email')->filter('trim|required|unique:User,email'),
+                            'first_name' => String::create('first_name')->filter('trim|required'),
+                            'last_name' => String::create('last_name')->filter('trim|required'),
                         ),
                     ),
                 ),
@@ -51,5 +54,9 @@ return array(
                 'application/json' => '\\Bono\\View\\JsonView',
             ),
         ),
+        '\\ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
+            'driver' => '\\ROH\\BonoAuth\\Driver\\NormAuth',
+        ),
+        '\\Bono\\Middleware\\SessionMiddleware'
     ),
 );
