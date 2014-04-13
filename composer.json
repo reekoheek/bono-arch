@@ -10,6 +10,7 @@
     ],
     "require": {
         "xinix-technology/bono": "dev-master",
-        "xinix-technology/norm": "dev-master"
+        "xinix-technology/norm": "dev-master",
+        "reekoheek/bono-auth": "dev-master"
     }
 }
