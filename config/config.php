@@ -16,6 +16,10 @@ use Norm\Schema\String;
 use Norm\Schema\Password;
 
 return array(
+    'app.about' => array(
+        'title' => 'Bono Application',
+    ),
+    'bono.salt' => 'please change this',
     'bono.providers' => array(
         '\\Norm\\Provider\\NormProvider' => array(
             'datasources' => array(
@@ -38,6 +42,7 @@ return array(
                 ),
             ),
         ),
+        '\\App\\Provider\\AppProvider',
     ),
     'bono.middlewares' => array(
         '\\Bono\\Middleware\\ControllerMiddleware' => array(
@@ -54,9 +59,11 @@ return array(
                 'application/json' => '\\Bono\\View\\JsonView',
             ),
         ),
-        '\\ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
-            'driver' => '\\ROH\\BonoAuth\\Driver\\NormAuth',
-        ),
-        '\\Bono\\Middleware\\SessionMiddleware'
+        // uncomment below to enable auth
+        // '\\ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
+        //     'driver' => '\\ROH\\BonoAuth\\Driver\\NormAuth',
+        // ),
+        // '\\Bono\\Middleware\\SessionMiddleware',
+        '\\Bono\\Middleware\\NotificationMiddleware',
     ),
 );

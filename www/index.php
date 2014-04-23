@@ -43,11 +43,4 @@ $app = new \Bono\App(
     )
 );
 
-$app->get(
-    '/',
-    function () use ($app) {
-        $app->response->template('home');
-    }
-);
-
 $app->run();
