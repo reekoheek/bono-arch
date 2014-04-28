@@ -1,6 +1,7 @@
 module.exports = function() {
     var cmd = this.require('./utils/cmd'),
-        Q = this.require('q');
+        Q = this.require('q'),
+        context = this;
 
     this.task('init', function(logger) {
         if (arguments.length > 1) {
@@ -8,7 +9,7 @@ module.exports = function() {
         }
 
         logger.head('Installing package from composer...');
-        return that.exec(['php', 'composer', 'install'], logger);
+        return context.exec(['php', 'composer', 'install'], logger);
     });
 
     this.task('serve', function(logger) {
@@ -20,7 +21,7 @@ module.exports = function() {
         if (!this.argv.t) {
             this.argv.t = './www';
         }
-        return that.exec(['php', 'serve'], logger);
+        return context.exec(['php', 'serve'], logger);
     });
 
 };
