@@ -8,9 +8,19 @@ module.exports = function() {
         }
 
         logger.head('Installing package from composer...');
-        return cmd('composer', ['install']).then(function(stream) {
-            logger.log(stream[0].trim());
-        });
+        return that.exec(['php', 'composer', 'install'], logger);
+    });
+
+    this.task('serve', function(logger) {
+        if (arguments.length > 1) {
+            throw new Error('Wrong argument');
+        }
+
+        logger.head('Serve standalone http...');
+        if (!this.argv.t) {
+            this.argv.t = './www';
+        }
+        return that.exec(['php', 'serve'], logger);
     });
 
 };
