@@ -153,12 +153,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reekoheek/bono-auth.git",
-                "reference": "e414a600e818149a396b4dc1887c0300d93e2d27"
+                "reference": "c9e656191d816731e1d48ee3666ed89a27e64bd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/e414a600e818149a396b4dc1887c0300d93e2d27",
-                "reference": "e414a600e818149a396b4dc1887c0300d93e2d27",
+                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/c9e656191d816731e1d48ee3666ed89a27e64bd6",
+                "reference": "c9e656191d816731e1d48ee3666ed89a27e64bd6",
                 "shasum": ""
             },
             "require": {
@@ -184,7 +184,7 @@
                 }
             ],
             "description": "Bono Auth",
-            "time": "2014-04-24 06:52:33"
+            "time": "2014-04-29 21:00:16"
         },
         {
             "name": "reekoheek/jsonkit",
@@ -369,12 +369,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinix-technology/bono.git",
-                "reference": "594a09b1c787e69f613029aaa2c2c9d722f2047a"
+                "reference": "c5951f70a22988a1c9ec8939dbcd0a3587101a18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinix-technology/bono/zipball/594a09b1c787e69f613029aaa2c2c9d722f2047a",
-                "reference": "594a09b1c787e69f613029aaa2c2c9d722f2047a",
+                "url": "https://api.github.com/repos/xinix-technology/bono/zipball/c5951f70a22988a1c9ec8939dbcd0a3587101a18",
+                "reference": "c5951f70a22988a1c9ec8939dbcd0a3587101a18",
                 "shasum": ""
             },
             "require": {
@@ -422,7 +422,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-04-24 07:49:34"
+            "time": "2014-05-01 19:37:16"
         },
         {
             "name": "xinix-technology/norm",
@@ -430,12 +430,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinix-technology/norm.git",
-                "reference": "7df524b6d26502f6337ab195a2c0dc44c54e82c1"
+                "reference": "99be1ec994c6c1f1cf75c1e870f09429dda90aed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/7df524b6d26502f6337ab195a2c0dc44c54e82c1",
-                "reference": "7df524b6d26502f6337ab195a2c0dc44c54e82c1",
+                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/99be1ec994c6c1f1cf75c1e870f09429dda90aed",
+                "reference": "99be1ec994c6c1f1cf75c1e870f09429dda90aed",
                 "shasum": ""
             },
             "require": {
@@ -475,7 +475,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-04-24 06:51:19"
+            "time": "2014-04-29 22:08:07"
         },
         {
             "name": "zeuxisoo/slim-whoops",
