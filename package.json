@@ -10,6 +10,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "MIT"
+  "author": "Ganesha <reekoheek@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "pax-php": "^0.1.1",
+    "moment": "^2.6.0",
+    "mustache": "^0.8.1"
+  }
 }
