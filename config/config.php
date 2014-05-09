@@ -42,7 +42,9 @@ return array(
                 ),
             ),
         ),
-        '\\Xinix\\Migrate\\Provider\\AppProvider',
+        '\\Xinix\\Migrate\\Provider\\MigrateProvider' => array(
+            'token' => 'akseskemigrate',
+        ),
         '\\App\\Provider\\AppProvider',
     ),
     'bono.middlewares' => array(
