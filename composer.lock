@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "c8950c9e928d8f4a6e2720b081a0e108",
+    "hash": "437755aaab2338e428a01bfd373dd386",
     "packages": [
         {
             "name": "filp/whoops",
@@ -377,12 +377,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinix-technology/bono.git",
-                "reference": "5c48377f30432e2c3851fd5cab8496a33d4d3b2c"
+                "reference": "227bffe3c2ae1e3ad523f695a73dd9219f2537e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinix-technology/bono/zipball/5c48377f30432e2c3851fd5cab8496a33d4d3b2c",
-                "reference": "5c48377f30432e2c3851fd5cab8496a33d4d3b2c",
+                "url": "https://api.github.com/repos/xinix-technology/bono/zipball/227bffe3c2ae1e3ad523f695a73dd9219f2537e6",
+                "reference": "227bffe3c2ae1e3ad523f695a73dd9219f2537e6",
                 "shasum": ""
             },
             "require": {
@@ -430,7 +430,45 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-05-07 06:53:15"
+            "time": "2014-05-09 15:39:29"
+        },
+        {
+            "name": "xinix-technology/migrate",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xinix-technology/migrate.git",
+                "reference": "ad0518fec823139dc1e2fd0961eefa2131fb1fe0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xinix-technology/migrate/zipball/ad0518fec823139dc1e2fd0961eefa2131fb1fe0",
+                "reference": "ad0518fec823139dc1e2fd0961eefa2131fb1fe0",
+                "shasum": ""
+            },
+            "require": {
+                "reekoheek/util": ">=0.1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Xinix\\Migrate": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ganesha",
+                    "email": "reekoheek@gmail.com",
+                    "homepage": "http://xinix.co.id",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Migration tool for bono",
+            "time": "2014-05-09 15:44:13"
         },
         {
             "name": "xinix-technology/norm",
@@ -438,12 +476,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinix-technology/norm.git",
-                "reference": "796126e38fd66f6795eddb4b48ff28c74b8b6613"
+                "reference": "d34d5a16eb38dca499962ec0ac39d5c95f350cc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/796126e38fd66f6795eddb4b48ff28c74b8b6613",
-                "reference": "796126e38fd66f6795eddb4b48ff28c74b8b6613",
+                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/d34d5a16eb38dca499962ec0ac39d5c95f350cc6",
+                "reference": "d34d5a16eb38dca499962ec0ac39d5c95f350cc6",
                 "shasum": ""
             },
             "require": {
@@ -483,7 +521,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-05-06 11:45:50"
+            "time": "2014-05-09 15:39:15"
         },
         {
             "name": "zeuxisoo/slim-whoops",
@@ -546,6 +584,7 @@
     "stability-flags": {
         "xinix-technology/bono": 20,
         "xinix-technology/norm": 20,
+        "xinix-technology/migrate": 20,
         "reekoheek/bono-auth": 20
     },
     "platform": [

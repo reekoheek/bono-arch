@@ -42,6 +42,7 @@ return array(
                 ),
             ),
         ),
+        '\\Xinix\\Migrate\\Provider\\AppProvider',
         '\\App\\Provider\\AppProvider',
     ),
     'bono.middlewares' => array(
@@ -63,7 +64,7 @@ return array(
         // '\\ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
         //     'driver' => '\\ROH\\BonoAuth\\Driver\\NormAuth',
         // ),
-        // '\\Bono\\Middleware\\SessionMiddleware',
-        '\\Bono\\Middleware\\NotificationMiddleware',
+        '\\Bono\\Middleware\\NotificationMiddleware' => null,
+        '\\Bono\\Middleware\\SessionMiddleware' => null,
     ),
 );
