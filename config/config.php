@@ -43,7 +43,7 @@ return array(
             ),
         ),
         '\\Xinix\\Migrate\\Provider\\MigrateProvider' => array(
-            'token' => 'akseskemigrate',
+            // 'token' => 'changetokenherebeforeenable',
         ),
         '\\App\\Provider\\AppProvider',
     ),
