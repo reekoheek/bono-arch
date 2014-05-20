@@ -437,12 +437,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinix-technology/migrate.git",
-                "reference": "ad0518fec823139dc1e2fd0961eefa2131fb1fe0"
+                "reference": "91c8a443eeec1107b359af916d5c9b324688c3d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinix-technology/migrate/zipball/ad0518fec823139dc1e2fd0961eefa2131fb1fe0",
-                "reference": "ad0518fec823139dc1e2fd0961eefa2131fb1fe0",
+                "url": "https://api.github.com/repos/xinix-technology/migrate/zipball/91c8a443eeec1107b359af916d5c9b324688c3d7",
+                "reference": "91c8a443eeec1107b359af916d5c9b324688c3d7",
                 "shasum": ""
             },
             "require": {
@@ -467,7 +467,7 @@
                 }
             ],
             "description": "Migration tool for bono",
-            "time": "2014-05-09 15:44:13"
+            "time": "2014-05-20 20:12:45"
         },
         {
             "name": "xinix-technology/norm",
