@@ -7,16 +7,16 @@
     "packages": [
         {
             "name": "filp/whoops",
-            "version": "1.1",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "a5865f8f02947590e36206b08368e5b08289a946"
+                "reference": "ae05259236204ccf904a94e5b0d96df8d4351da5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/a5865f8f02947590e36206b08368e5b08289a946",
-                "reference": "a5865f8f02947590e36206b08368e5b08289a946",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/ae05259236204ccf904a94e5b0d96df8d4351da5",
+                "reference": "ae05259236204ccf904a94e5b0d96df8d4351da5",
                 "shasum": ""
             },
             "require": {
@@ -28,7 +28,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -61,7 +61,7 @@
                 "whoops",
                 "zf2"
             ],
-            "time": "2014-04-28 04:54:31"
+            "time": "2014-05-13 05:05:11"
         },
         {
             "name": "guzzle/guzzle",
@@ -161,12 +161,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reekoheek/bono-auth.git",
-                "reference": "3356f06cb52d2e5095384999174d194348014ae3"
+                "reference": "c16c425859ed899911f0215e8ff1416ae5890394"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/3356f06cb52d2e5095384999174d194348014ae3",
-                "reference": "3356f06cb52d2e5095384999174d194348014ae3",
+                "url": "https://api.github.com/repos/reekoheek/bono-auth/zipball/c16c425859ed899911f0215e8ff1416ae5890394",
+                "reference": "c16c425859ed899911f0215e8ff1416ae5890394",
                 "shasum": ""
             },
             "require": {
@@ -192,7 +192,7 @@
                 }
             ],
             "description": "Bono Auth",
-            "time": "2014-05-06 06:44:13"
+            "time": "2014-05-19 08:00:54"
         },
         {
             "name": "reekoheek/jsonkit",
@@ -377,20 +377,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinix-technology/bono.git",
-                "reference": "227bffe3c2ae1e3ad523f695a73dd9219f2537e6"
+                "reference": "6dfda0fae97f373e0d6c80fb9b431170a175464f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinix-technology/bono/zipball/227bffe3c2ae1e3ad523f695a73dd9219f2537e6",
-                "reference": "227bffe3c2ae1e3ad523f695a73dd9219f2537e6",
+                "url": "https://api.github.com/repos/xinix-technology/bono/zipball/6dfda0fae97f373e0d6c80fb9b431170a175464f",
+                "reference": "6dfda0fae97f373e0d6c80fb9b431170a175464f",
                 "shasum": ""
             },
             "require": {
                 "filp/whoops": "1.*",
                 "reekoheek/util": ">=0.1.2",
                 "slim/slim": "2.3.*",
-                "xinix-technology/norm": "*",
-                "zeuxisoo/slim-whoops": "0.1.0"
+                "xinix-technology/norm": "*"
             },
             "require-dev": {
                 "phpdocumentor/phpdocumentor": "2.*",
@@ -430,7 +429,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-05-09 15:39:29"
+            "time": "2014-05-20 12:12:11"
         },
         {
             "name": "xinix-technology/migrate",
@@ -476,12 +475,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinix-technology/norm.git",
-                "reference": "d34d5a16eb38dca499962ec0ac39d5c95f350cc6"
+                "reference": "5ad7ddfe2b588a89ff1cbf9709c0f6255d27013f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/d34d5a16eb38dca499962ec0ac39d5c95f350cc6",
-                "reference": "d34d5a16eb38dca499962ec0ac39d5c95f350cc6",
+                "url": "https://api.github.com/repos/xinix-technology/norm/zipball/5ad7ddfe2b588a89ff1cbf9709c0f6255d27013f",
+                "reference": "5ad7ddfe2b588a89ff1cbf9709c0f6255d27013f",
                 "shasum": ""
             },
             "require": {
@@ -521,57 +520,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-05-09 15:39:15"
-        },
-        {
-            "name": "zeuxisoo/slim-whoops",
-            "version": "0.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zeuxisoo/php-slim-whoops.git",
-                "reference": "7d660f4dc5aa2243e69062bb09fc9396385627df"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zeuxisoo/php-slim-whoops/zipball/7d660f4dc5aa2243e69062bb09fc9396385627df",
-                "reference": "7d660f4dc5aa2243e69062bb09fc9396385627df",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "filp/whoops": "1.*",
-                "phpunit/phpunit": "3.7.*@dev",
-                "slim/slim": "2.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Zeuxisoo\\Whoops\\Provider\\Slim\\WhoopsMiddleware": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Zeuxis Lo",
-                    "email": "seekstudio@gmail.com",
-                    "homepage": "http://www.chair.im/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "PHP whoops error on slim framework",
-            "homepage": "https://github.com/zeuxisoo/php-slim-whoops/",
-            "keywords": [
-                "error",
-                "exception",
-                "slim",
-                "whoops"
-            ],
-            "time": "2014-01-14 07:01:41"
+            "time": "2014-05-20 12:13:35"
         }
     ],
     "packages-dev": [
