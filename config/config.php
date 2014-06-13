@@ -16,8 +16,9 @@ use Norm\Schema\String;
 use Norm\Schema\Password;
 
 return array(
-    'app.about' => array(
+    'application' => array(
         'title' => 'Bono Application',
+        'subtitle' => 'One great application'
     ),
     'bono.salt' => 'please change this',
     'bono.providers' => array(
