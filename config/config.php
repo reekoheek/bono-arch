@@ -48,6 +48,7 @@ return array(
         '\\App\\Provider\\AppProvider',
     ),
     'bono.middlewares' => array(
+        '\\Bono\\Middleware\\StaticPageMiddleware' => null,
         '\\Bono\\Middleware\\ControllerMiddleware' => array(
             'default' => '\\Norm\\Controller\\NormController',
             'mapping' => array(

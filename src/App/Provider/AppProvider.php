@@ -8,11 +8,6 @@ class AppProvider extends \Bono\Provider\Provider
     {
         $app = $this->app;
 
-        $app->get(
-            '/',
-            function () use ($app) {
-                $app->response->template('home');
-            }
-        );
+        // do something here
     }
 }
