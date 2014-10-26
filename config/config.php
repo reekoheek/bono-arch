@@ -22,10 +22,10 @@ return array(
     ),
     'bono.salt' => 'please change this',
     'bono.providers' => array(
-        '\\Norm\\Provider\\NormProvider' => array(
+        'Norm\\Provider\\NormProvider' => array(
             'datasources' => array(
                 'mongo' => array(
-                    'driver' => '\\Norm\\Connection\\MongoConnection',
+                    'driver' => 'Norm\\Connection\\MongoConnection',
                     'database' => 'bono',
                 ),
             ),
@@ -43,32 +43,32 @@ return array(
                 ),
             ),
         ),
-        '\\Xinix\\Migrate\\Provider\\MigrateProvider' => array(
+        'Xinix\\Migrate\\Provider\\MigrateProvider' => array(
             // 'token' => 'changetokenherebeforeenable',
         ),
-        '\\App\\Provider\\AppProvider',
+        'App\\Provider\\AppProvider',
     ),
     'bono.middlewares' => array(
-        '\\Bono\\Middleware\\StaticPageMiddleware' => null,
-        '\\Bono\\Middleware\\ControllerMiddleware' => array(
-            'default' => '\\Norm\\Controller\\NormController',
+        'Bono\\Middleware\\StaticPageMiddleware' => null,
+        'Bono\\Middleware\\ControllerMiddleware' => array(
+            'default' => 'Norm\\Controller\\NormController',
             'mapping' => array(
                 '/user' => null,
             ),
         ),
-        '\\Bono\\Middleware\\ContentNegotiatorMiddleware' => array(
+        'Bono\\Middleware\\ContentNegotiatorMiddleware' => array(
             'extensions' => array(
                 'json' => 'application/json',
             ),
             'views' => array(
-                'application/json' => '\\Bono\\View\\JsonView',
+                'application/json' => 'Bono\\View\\JsonView',
             ),
         ),
         // uncomment below to enable auth
-        // '\\ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
-        //     'driver' => '\\ROH\\BonoAuth\\Driver\\NormAuth',
+        // 'ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
+        //     'driver' => 'ROH\\BonoAuth\\Driver\\NormAuth',
         // ),
-        '\\Bono\\Middleware\\NotificationMiddleware' => null,
-        '\\Bono\\Middleware\\SessionMiddleware' => null,
+        'Bono\\Middleware\\NotificationMiddleware' => null,
+        'Bono\\Middleware\\SessionMiddleware' => null,
     ),
 );
