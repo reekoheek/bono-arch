@@ -24,10 +24,15 @@ return array(
     'bono.providers' => array(
         'Norm\\Provider\\NormProvider' => array(
             'datasources' => array(
-                'mongo' => array(
-                    'driver' => 'Norm\\Connection\\MongoConnection',
-                    'database' => 'bono',
+                'filedb' => array(
+                    'driver' => 'ROH\\FDB\\Connection',
+                    'dataDir' => '../data',
                 ),
+                // to use mongo
+                // 'mongo' => array(
+                //     'driver' => 'Norm\\Connection\\MongoConnection',
+                //     'database' => 'bono',
+                // ),
             ),
             'collections' => array(
                 'mapping' => array(
