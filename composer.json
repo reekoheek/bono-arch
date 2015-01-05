@@ -9,11 +9,11 @@
         }
     ],
     "require": {
-        "xinix-technology/bono": "~0.3.1",
-        "xinix-technology/norm": "~0.3.1",
+        "xinix-technology/bono": "dev-master",
+        "xinix-technology/norm": "dev-master",
         "xinix-technology/migrate": "~0.1.0",
         "reekoheek/bono-auth": "~0.1.6",
-        "reekoheek/norm-fdb": "~0.1.0"
+        "reekoheek/norm-fdb": "dev-master"
     },
     "autoload": {
         "psr-0": {

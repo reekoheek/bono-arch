@@ -61,6 +61,12 @@ return array(
                 '/user' => null,
             ),
         ),
+        // uncomment below to enable auth
+        // 'ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
+        //     'driver' => 'ROH\\BonoAuth\\Driver\\NormAuth',
+        // ),
+        'Bono\\Middleware\\NotificationMiddleware' => null,
+        'Bono\\Middleware\\SessionMiddleware' => null,
         'Bono\\Middleware\\ContentNegotiatorMiddleware' => array(
             'extensions' => array(
                 'json' => 'application/json',
@@ -69,11 +75,5 @@ return array(
                 'application/json' => 'Bono\\View\\JsonView',
             ),
         ),
-        // uncomment below to enable auth
-        // 'ROH\\BonoAuth\\Middleware\\AuthMiddleware' => array(
-        //     'driver' => 'ROH\\BonoAuth\\Driver\\NormAuth',
-        // ),
-        'Bono\\Middleware\\NotificationMiddleware' => null,
-        'Bono\\Middleware\\SessionMiddleware' => null,
     ),
 );
