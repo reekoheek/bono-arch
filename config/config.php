@@ -17,16 +17,17 @@ use Norm\Schema\Password;
 
 return array(
     'application' => array(
-        'title' => 'Bono Application',
+        'title' => 'Bono',
         'subtitle' => 'One great application'
     ),
+    'bono.prettifyURL' => false,
     'bono.salt' => 'please change this',
     'bono.providers' => array(
         'Norm\\Provider\\NormProvider' => array(
             'datasources' => array(
                 'filedb' => array(
                     'driver' => 'ROH\\FDB\\Connection',
-                    'dataDir' => '../data',
+                    'dataDir' => '../srv/data',
                 ),
                 // to use mongo
                 // 'mongo' => array(
@@ -35,16 +36,20 @@ return array(
                 // ),
             ),
             'collections' => array(
-                'mapping' => array(
-                    'User' => array(
-                        'schema' => array(
-                            'username' => String::create('username')->filter('trim|required|unique:User,username'),
-                            'password' => Password::create('password')->filter('trim|confirmed|salt'),
-                            'email' => String::create('email')->filter('trim|required|unique:User,email'),
-                            'first_name' => String::create('first_name')->filter('trim|required'),
-                            'last_name' => String::create('last_name')->filter('trim|required'),
-                        ),
+                'default' => array(
+                    // The observer, more like a hook event
+                    'observers' => array(
+                        'Norm\\Observer\\Ownership',
+                        'Norm\\Observer\\Timestampable',
                     ),
+
+                    // Limit the entries that shown, then paginate them
+                    'limit' => 15,
+                ),
+
+                // Resolver to find where the schemas config stored see in /config/collections folder
+                'resolvers' => array(
+                    'Norm\\Resolver\\CollectionResolver',
                 ),
             ),
         ),
