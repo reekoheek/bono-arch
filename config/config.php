@@ -20,6 +20,7 @@ return array(
         'title' => 'Bono',
         'subtitle' => 'One great application'
     ),
+    'bono.timezone' => 'Asia/Jakarta',
     'bono.prettifyURL' => false,
     'bono.salt' => 'please change this',
     'bono.providers' => array(
