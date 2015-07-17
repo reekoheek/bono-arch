@@ -1,3 +1,13 @@
+<div class="float-menu">
+<h2>Modules</h2>
+<?php $modules = f('app')->config('bono.middlewares')['Bono\Middleware\ControllerMiddleware']['mapping'] ?>
+    <?php foreach($modules as $module => $v): ?>
+    <a href="<?php echo URL::site($module) ?>">
+        <?php echo $module ?>
+    </a>
+    <?php endforeach ?>
+</div>
+
 <h2>Hello Friend!</h2>
 
 <p>

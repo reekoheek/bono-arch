@@ -54,9 +54,6 @@ return array(
                 ),
             ),
         ),
-        'Xinix\\Migrate\\Provider\\MigrateProvider' => array(
-            // 'token' => 'changetokenherebeforeenable',
-        ),
         'App\\Provider\\AppProvider',
     ),
     'bono.middlewares' => array(
