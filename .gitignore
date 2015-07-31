@@ -1,6 +1,6 @@
 /vendor
 /composer.phar
-/project.sublime-*
+/*.sublime-*
 /node_modules
 /www/vendor
 /autoload.json

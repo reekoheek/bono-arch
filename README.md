@@ -1,4 +1,4 @@
 bono-arch
 =========
 
-Bono PAX Archetype
+Bono Archetype
